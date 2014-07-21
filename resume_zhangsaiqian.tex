@@ -1,0 +1,131 @@
+%% start of file `template-zh.tex'.
+%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv 主题
+\moderncvstyle{classic}                        % 选项参数是 ‘casual’, ‘classic’, ‘oldstyle’ 和 ’banking’
+\moderncvcolor{blue}                          % 选项参数是 ‘blue’ (默认)、‘orange’、‘green’、‘red’、‘purple’ 和 ‘grey’
+%\nopagenumbers{}                             % 消除注释以取消自动页码生成功能
+
+% 字符编码
+\usepackage[utf8]{inputenc}                   % 替换你正在使用的编码
+\usepackage{CJKutf8}
+%\usepackage{CJK}
+% 调整页面出血
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}           % 如果你希望改变日期栏的宽度
+
+% 个人信息
+\familyname{张赛谦}
+\firstname{}
+
+%\title{简历题目 (可选项)}                      % 可选项、如不需要可删除本行
+%\address{大连理工大学}{}             % 可选项、如不需要可删除本行
+\mobile{13591311934}                         % 可选项、如不需要可删除本行
+%\phone{}                          % 可选项、如不需要可删除本行
+%\fax{}                            % 可选项、如不需要可删除本行
+\email{zhangsaiqian@gmail.com}                    % 可选项、如不需要可删除本行
+%\homepage{weibo.com/u/1298310784}                  % 可选项、如不需要可删除本行
+%\extrainfo{附加信息 (可选项)}                  % 可选项、如不需要可删除本行
+%\photo[64pt][0.4pt]{picture}                  % ‘64pt’是图片必须压缩至的高度、‘0.4pt‘是图片边框的宽度 (如不需要可调节至0pt)、’picture‘ 是图片文件的名字;可选项、如不需要可删除本行
+%\quote{引言(可选项)}                           % 可选项、如不需要可删除本行
+
+% 显示索引号;仅用于在简历中使用了引言
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% 分类索引
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            内容
+%----------------------------------------------------------------------------------
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}                       % 详情参阅CJK文件包
+\maketitle
+
+\section{个人简介}
+\cvitem{}{男，1987年12月生，河南省南阳市人，大连理工大学物理与光电工程学院博士研究生}
+
+\section{教育背景}
+\cventry{2010 -- 2015}{硕博连读}{}{大连理工大学}{等离子体物理}{}  % 第3到第6编码可留白
+\cventry{2006 -- 2010}{理学学士}{}{大连理工大学}{应用物理}{}  % 第3到第6编码可留白
+
+
+\section{研究方向}
+\cvitem{}{等离子刻蚀剖面演化的模拟}
+\cvitem{}{导师 戴忠玲 教授}
+%\cvitem{说明}{\small 等离子体刻蚀}
+
+\section{专业知识}
+\subsection{应用物理（本科）}
+\cvitem{专业课程}{数学、物理类，汇编语言，计算机硬件基础，计算物理，半导体材料物理，工程训练等}
+%\cventry{}{}{}{}{}{a}
+%\cventry{年 -- 年}{职位}{公司}{城市}{}{说明行1\newline{}说明行2}
+\subsection{等离子体物理（研究生）}
+\cvitem{专业课程}{等离子体物理前沿，等离子体技术与应用，论文写作与学术规范等}
+\cvitem{专业技能}{在自己专业的学习中，了解研究背景，熟悉和掌握对物理问题建立数学模型，编程进行数值计算求解（流体方程、蒙特卡洛法），对结果进行数据分析和展示，并参与学术交流，包括国际会议上作英文口头报告}
+%\cventry{年 -- 年}{职位}{公司}{城市}{}{说明}
+
+\section{语言技能}
+
+\cvitem{英语}{日常、学术交流口语，阅读文献，论文书写，大二527分过六级}{}
+%\cvitemwithcomment{吴语}{江南长大}{能听懂}
+%\cvitem{}{参与英语配音比赛等活动}{}
+
+\section{计算机技能}
+\cvdoubleitem{编程:}{C, FORTRAN, Python (matplotlib)}{文档排版:}{MS Office, \LaTeX, Vi}
+\cvdoubleitem{网络:}{HTML基础, goagent, vpn}{计算机系统:}{GNU/Linux, OS X, Shell脚本}
+\cvitem{软件:}{Visual Studio, COMSOL(多物理场仿真), Matlab, Origin, GCC, Gnuplot等}{}{}
+
+\section{个人兴趣}
+\cvitem{互联网}{个人博客，开源社区，微信微博知乎等}
+\cvitem{电子数码}{手机、电脑、音乐器材、微单等}
+%\cvitem{休闲娱乐}{\small 台球、羽毛球}
+
+\section{所获奖项}
+\cvlistitem{2009 学习优秀二等奖学金}
+\cvlistitem{2010 研究生二等奖学金}
+\cvlistitem{2013 国家奖学金}
+
+\section{发表文章}
+\cvlistitem{{\bfseries Zhang Saiqian}, Dai Zhongling and Wang Younian, \emph{Ion transport to a photoresist trench in a radio frequency sheath, 2012, Plasma Sci. Technol. 14 958}}
+\cvlistitem{Zhong-Ling Dai, {\bfseries Sai-Qian Zhang}, You-Nian Wang, \emph{Study on Feature Profile Evolution for Chlorine Etching of Silicon in a RF Biased Sheath, Vacuum, Volume 89, March 2013, Pages 197–202}}
+\cvlistitem{{\bfseries Sai-Qian Zhang}, Zhong-Ling Dai, Yuan-Hong Song, You-Nian Wang, \emph{Effect of reactant transport on the trench profile evolution for silicon etching in chlorine plasmas, Vacuum, Volume 99, January 2014, Pages 180–188}}
+
+\renewcommand{\listitemsymbol}{-}             % 改变列表符号
+%\section{联系方式}
+%\cvitem{手机}{13591311934}
+%\cvitem{邮箱}{zhangsaiqian@gmail.com}
+%\section{其他 2}
+%\cvlistdoubleitem{项目 1}{项目 4}
+%\cvlistdoubleitem{项目 2}{项目 5\cite{book1}}
+%\cvlistdoubleitem{项目 3}{}
+
+% 来自BibTeX文件但不使用multibib包的出版物
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% BibTeX的数字标签
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}                    % 'publications' 是BibTeX文件的文件名
+
+% 来自BibTeX文件并使用multibib包的出版物
+%\section{出版物}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}               % 'publications' 是BibTeX文件的文件名
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}               % 'publications' 是BibTeX文件的文件名
+
+\clearpage\end{CJK}
+\end{document}
+
+
+%% 文件结尾 `template-zh.tex'.
